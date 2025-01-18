@@ -1,0 +1,193 @@
+/* General App Styling */
+.app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 10px; /* Reduced padding */
+  background: #add6e4;
+  color: white;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2rem; /* Reduced font size */
+  text-align: center;
+}
+
+/* Task Input Styling */
+.task-input {
+  margin-bottom: 10px; /* Reduced margin */
+  display: flex;
+  justify-content: center;
+}
+
+.task-input input {
+  padding: 5px; /* Reduced padding */
+  font-size: 1rem; /* Reduced font size */
+  width: 200px; /* Reduced width */
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin-right: 5px; /* Reduced margin */
+  background-color: #f2f3f4;
+  color: #333;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.task-input input:focus {
+  background-color: #e0e0e0;
+}
+
+.task-input button {
+  padding: 5px 10px; /* Reduced button padding */
+  font-size: 1rem; /* Reduced font size */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List Styling */
+.task-list {
+  list-style: none;
+  padding: 0;
+  max-width: 500px; /* Reduced width */
+  margin: 0 auto;
+}
+
+.task-item {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 0.2fr; /* Adjusted grid */
+  justify-content: start;
+  gap: 1rem; /* Reduced gap */
+  padding: 0.8rem 1rem; /* Reduced padding */
+  background-color: #f2f3f4;
+  border-radius: 20px; /* Slightly reduced radius */
+  transition: background-color 200ms ease-in-out;
+  margin: 1rem 0; /* Reduced margin */
+  font-size: 1rem; /* Reduced font size */
+  color: #1c2833;
+}
+
+.task-item:hover {
+  background-color: #e3e3e3;
+}
+
+.task-item span {
+  max-width: 15rem; /* Reduced width */
+}
+
+/* Icons and Buttons */
+.check-btn,
+.delete-btn,
+.edit-btn,
+.save-button {
+  font-size: 1.2rem; /* Smaller icon size */
+  cursor: pointer;
+  width: 2rem; /* Reduced size */
+  height: 2rem; /* Reduced size */
+  border-radius: 50%; /* Round buttons */
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px; /* Reduced shadow */
+  transition: background-color 0.3s ease;
+}
+
+.check-btn {
+  background-color: #2ecc71;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.edit-btn {
+  background-color: #ffc107;
+}
+
+.check-btn:hover,
+.delete-btn:hover,
+.edit-btn:hover {
+  background-color: #f1f1f1; /* Light background on hover */
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 4px 12px; /* Reduced shadow */
+}
+
+.check-btn:active,
+.delete-btn:active,
+.edit-btn:active {
+  background-color: #ddd; /* Slight darkening on active state */
+}
+
+/* Additional Styling for Task List */
+.checkList {
+  text-decoration: line-through;
+}
+
+.notCheckList {
+  text-decoration: none;
+}
+
+/* Clear Tasks Button */
+.clear-btn {
+  background-color: #e74c3c;
+  font-size: 1rem; /* Reduced font size */
+  padding: 0.6rem 1.2rem; /* Reduced padding */
+  border-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #8d1407;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  font-size: 1rem; /* Reduced font size */
+  justify-content: center;
+  margin: 10px 0; /* Reduced margin */
+  padding: 0.5rem; /* Reduced padding */
+  width: 100%;
+}
+
+form input {
+  padding: 5px; /* Reduced padding */
+  font-size: 1rem; /* Reduced font size */
+  letter-spacing: 0.1rem;
+  border: none;
+  outline: none;
+  border-radius: 15px 0 0 15px;
+  max-width: 300px; /* Reduced width */
+  width: 100%;
+  background-color: #f2f3f4;
+  color: #333;
+}
+
+form input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+form button {
+  padding: 5px 10px; /* Adjusted padding */
+  font-size: 1rem; /* Reduced font size */
+  background-color: #5dade2;
+  color: white;
+  border-radius: 0 15px 15px 0;
+  min-width: 80px; /* Reduced width */
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f1c40f;
+}
+
+span {
+  margin-right: 2rem; /* Reduced margin */
+}
